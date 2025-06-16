@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="View detailed insights about our latest real estate projects in Faridabad, featuring top builders and properties">
+
+  <title>12 Avenue</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+
+    .heading {
+      padding: 2rem 0;
+    }
+
+    .nav-link {
+      font-weight: 500;
+      color: #333;
+      margin-bottom: 0.3rem;
+      transition: all 0.3s ease;
+    }
+
+    .nav-link:hover,
+    .nav-link.active {
+      color: red;
+      background-color: #f1f1f1;
+      border-radius: 5px;
+    }
+
+    .scrollspy-container {
+      height: 80vh;
+      overflow-y: auto;
+      scroll-behavior: smooth;
+      padding-right: 1rem;
+    }
+
+    .scrollspy-container img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    #navbar-example3 {
+      position: sticky;
+      top: 1rem;
+    }
+
+    @media (max-width: 767.98px) {
+      #navbar-example3 {
+        position: static;
+        margin-bottom: 1rem;
+        border: none !important;
+      }
+
+      .scrollspy-container {
+        height: auto;
+        overflow: visible;
+        padding-right: 0;
+      }
+    }
+
+    /* Back to top button */
+    #backToTopBtn {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      display: none;
+      z-index: 1000;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="logo.webp" alt="VIP Reality Logo" width="150" height="70">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav gap-2">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html" style="background-color: #121212;">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="about.html" style="background-color: #121212;">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="properties.html" style="background-color: #121212;">Trending</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="projectdetails.html" style="background-color: #121212;">Project Details</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="services.html" style="background-color: #121212;">Services</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link active" href="team.html" style="background-color: #121212;">Team</a>
+          </li> -->
+          <li class="nav-item">
+            <a class="btn btn-primary active" href="contact.html" style="background-color: #121212;">Get in Touch</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="heading bg-black text-center text-white">
+    <h1><span style="color: red;">12 AVENUE</span></h1>
+  </div>
+
+  <!-- Toggle for mobile nav -->
+  <div class="container d-md-none mb-3">
+    <button class="btn btn-outline-dark w-100" type="button" data-bs-toggle="collapse" data-bs-target="#mobileNav"
+      aria-expanded="false" aria-controls="mobileNav">
+      Menu
+    </button>
+    <div class="collapse mt-2" id="mobileNav">
+      <nav class="nav flex-column border p-3" id="navbar-example3-mobile">
+        <a class="nav-link" href="#I1">RPS 12th Avenue</a>
+        <a class="nav-link" href="#I2">16.5 Acre Project</a>
+        <a class="nav-link" href="#I3">Entertainment Zone / Theme Park</a>
+        <a class="nav-link" href="#I4">Different Types of Shopping Destination</a>
+        <a class="nav-link" href="#I5">Best food brands in one place</a>
+        <a class="nav-link" href="#I6">All essential needs</a>
+        <a class="nav-link" href="#I7">Fashion Needs with best brands</a>
+        <a class="nav-link" href="#I8">Onboard and Upcoming brands</a>
+        <a class="nav-link" href="#I9">Catchment within 10km</a>
+        <a class="nav-link" href="#I10">Luxurious Feeling</a>
+        <a class="nav-link" href="#I11">One Stop Destination</a>
+      </nav>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Sidebar nav for desktop -->
+      <div class="col-md-4 d-none d-md-block">
+        <nav id="navbar-example3" class="flex-column align-items-stretch pe-md-4 border-end">
+          <nav class="nav flex-column">
+            <a class="nav-link" href="#I1"><b>RPS 12th Avenue</b></a>
+            <a class="nav-link" href="#I2">16.5 Acre Project</a>
+            <a class="nav-link" href="#I3">Entertainment Zone / Theme Park </a>
+            <a class="nav-link" href="#I4">Different Types of Shopping Destination</a>
+            <a class="nav-link" href="#I5">Best food brands in one place</a>
+            <a class="nav-link" href="#I6">All essential needs</a>
+            <a class="nav-link" href="#I7">Fashion Needs with best brands</a>
+            <a class="nav-link" href="#I8">Onboard and Upcoming brands</a>
+            <a class="nav-link" href="#I9">Catchment within 10km </a>
+            <a class="nav-link" href="#I10">Luxurious Feeling</a>
+            <a class="nav-link" href="#I11">One Stop Destination</a>
+          </nav>
+        </nav>
+      </div>
+
+      <!-- Scrollable image section -->
+      <div class="col-md-8">
+        <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true"
+          class="scrollspy-container" tabindex="0">
+          <div id="I1"><img src="r1.jpeg" alt="RPS 12th Avenue" loading="lazy" /></div>
+          <div id="I2"><img src="r2.jpeg" alt="16.5 Acre Project" loading="lazy" /></div>
+          <div id="I3"><img src="r3.jpeg" alt="Entertainment Zone / Theme Park" loading="lazy" /></div>
+          <div id="I4"><img src="r4.jpeg" alt="Different Types of Shopping Destination" loading="lazy" /></div>
+          <div id="I5"><img src="r5.jpeg" alt="Best food brands in one place" loading="lazy" /></div>
+          <div id="I6"><img src="r6.jpeg" alt="All essential needs" loading="lazy" /></div>
+          <div id="I7"><img src="r7.jpeg" alt="Fashion Needs with best brands" loading="lazy" /></div>
+          <div id="I8"><img src="r8.jpeg" alt="Onboard and Upcoming brands" loading="lazy" /></div>
+          <div id="I9"><img src="r9.jpeg" alt="Catchment within 10km" loading="lazy" /></div>
+          <div id="I10"><img src="r10.jpeg" alt="Luxurious Feeling" loading="lazy" /></div>
+          <div id="I11"><img src="r11.jpeg" alt="One Stop Destination" loading="lazy" /></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button id="backToTopBtn" class="btn btn-danger rounded-circle">
+    ↑
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Back to top button
+    const backToTopBtn = document.getElementById("backToTopBtn");
+    window.onscroll = () => {
+      backToTopBtn.style.display = window.scrollY > 300 ? "block" : "none";
+    };
+
+    backToTopBtn.onclick = () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+  </script>
+  <!-- ---------------------------------------------------------------------------------------------------------------------------------------- -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <div class="heading bg-dark text-center text-white text-center " style="margin-top: 50px;" id="sarayu">
+    <h1>The House of Abhinandan Lodha </h1>
+  </div>
+  <div class="container my-5 SARAYU">
+
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <div class="card"><img src="s1.jpeg" alt="Abhinandan Lodha" class="card-img-top"></div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card"><img src="s2.jpeg" alt="Abhinandan Lodha" class="card-img-top"></div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card"><img src="s3.jpeg" alt="Abhinandan Lodha" class="card-img-top"></div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card"><img src="s4.jpeg" alt="Abhinandan Lodha" class="card-img-top"></div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card"><img src="s5.jpeg" alt="Abhinandan Lodha" class="card-img-top"></div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card"><img src="s6.jpeg" alt="Abhinandan Lodha" class="card-img-top"></div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card"><img src="s7.jpeg" alt="Abhinandan Lodha" class="card-img-top"></div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card"><img src="s8.jpeg" alt="Abhinandan Lodha" class="card-img-top"></div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card"><img src="s9.jpeg" alt="Abhinandan Lodha" class="card-img-top"></div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card"><img src="s10.jpeg" alt="Abhinandan Lodha" class="card-img-top"></div>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <div class="swiper-button-next" style="color: white;"></div>
+      <div class="swiper-button-prev" style="color: white;"></div>
+      <style>
+        .carousel-item {
+          text-align: center;
+        }
+
+        video {
+          max-width: 100%;
+          height: auto;
+          border-radius: 10px;
+        }
+      </style>
+      </head>
+
+      <body>
+
+        <div class="container my-5">
+          <div id="videoCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+
+              <!-- Video Slide 1 -->
+              <div class="carousel-item active">
+                <video controls>
+                  <source src="SA1.mp4" type="video/mp4">
+                </video>
+              </div>
+
+              <!-- Video Slide 2 -->
+              <div class="carousel-item">
+                <video controls>
+                  <source src="SA2.mp4" type="video/mp4">
+                </video>
+              </div>
+
+            </div>
+
+            <!-- Carousel Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#videoCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#videoCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </div>
+  </div>
+
+  <!-- SwiperJS Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swi = new Swiper('.swiper', {
+      loop: true,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      slidesPerView: 1,
+      spaceBetween: 10,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 2
+        },
+        992: {
+          slidesPerView: 4
+        }
+      }
+    });
+  </script>
+
+  <div class="btptpride" id="bptp">
+    <div class="container-fluid shadow-bg text-white">
+      <div class="container">
+        <div class="row text-center mb-4">
+          <h2 class="fw-bold " style="color: rgb(255, 218, 11);">BPTP Parklands Pride</h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="feature-card p-4">
+              <h5 class="card-title">Ready-to-Move Housing Society</h5>
+              <p class="card-text">BPTP Parklands Pride is a fully developed and ready-to-move residential community.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="feature-card p-4">
+              <h5 class="card-title">Multiple Housing Options</h5>
+              <p class="card-text">The project offers a mix of apartments, independent floors, and villas for various
+                preferences.</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="feature-card p-4">
+              <h5 class="card-title">Budget-Friendly Variety</h5>
+              <p class="card-text">Homes are available in a wide budget range, making it suitable for different buyers.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="feature-card p-4">
+              <h5 class="card-title">Comfort & Style Combined</h5>
+              <p class="card-text">Each unit is designed to offer a blend of modern comfort and elegant living.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container my-5">
+        <div class="row align-items-center">
+          <!-- Left: Video -->
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <video src="bptpplots.mp4" controls style="height: 400px; width: 500px;"></video>
+          </div>
+
+          <!-- Right: Highlights -->
+          <div class="col-lg-6">
+            <div class="highlight-box">
+              <h4 class="mb-3">BPTP Plot's Highlights</h4>
+              <ul class="list-unstyled">
+                <li> ✔ Located in prime sectors (75–89) of Greater Faridabad with smooth connectivity to Delhi, Noida,
+                  and Gurgaon via NH-2, FNG Expressway, and upcoming metro corridors.</li>
+                <li> ✔ Offers freehold residential plots under BPTP Parklands and District 1 to 4, with sizes ranging
+                  from 100 to 300+ sq. yards</li>
+                <li> ✔ Townships feature wide roads, street lights, sewerage systems, parks, and gated security.</li>
+                <li> ✔ Plots are priced around ₹45,000–₹65,000 per sq. yard, offering a lower entry point compared to
+                  Gurgaon or Noida.</li>
+                <li> ✔ Many plots fall under the Deen Dayal Jan Awas Yojna (DDJAY), providing benefits like affordable
+                  pricing and ease of approvals.</li>
+                <li> ✔ Surrounded by reputed schools, hospitals, malls, and entertainment zones (e.g., DPS, Shiv Nadar,
+                  Sarvodaya Hospital).</li>
+                <li> ✔ Faridabad’s fast-growing infrastructure and BPTP’s delivery track record make these plots a
+                  promising long-term investment</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bootstrap JS -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    .shadow-bg {
+      background-color: #121212;
+      padding: 60px 20px;
+    }
+
+    .feature-card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+      height: 100%;
+      transition: transform 0.3s ease;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card-title {
+      color: #222;
+      font-weight: bold;
+    }
+
+    .card-text {
+      color: #555;
+    }
+  </style>
+  <div class="omax" style="background-color: #121212;">
+    <div class="heading text-center text-white bg-black" style="margin-top: 20px;">
+      <h1>Omaxe World Street</h1>
+    </div>
+    <div class="container my-5 bg-dark text-white justify-content-center">
+      <div class="row align-items-center">
+
+        <!-- Left Side: Headings with Bullet Points -->
+        <div class="col-md-6">
+
+          <!-- Section 1 -->
+          <h4 class="mb-2">Omaxe World Mall Units</h4>
+          <ul>
+            <li>Retail Shops (650 sq.ft.): ₹2.16 Cr.</li>
+            <li>Food Court Spaces (300–400 sq.ft.): ₹67.5–90 Lakh.</li>
+            <li>Entertainment Units (250 sq.ft.): ₹58.5 Lakh.</li>
+
+            <li>12% assured returns until possession.</li>
+            <li>6% lease guarantee for 3 years.</li>
+            <li>Projected capital growth: 30–40%.</li>
+
+          </ul>
+
+          <!-- Section 2 -->
+          <h4 class="mt-4 mb-2"> Location Advantages</h4>
+          <ul>
+            <li>Near Delhi–Mumbai Expressway, FNG Expressway & Jewar Airport.</li>
+            <li>Close to Bata Chowk Metro Station.</li>
+            <li>Surrounded by residential zones, schools, and hospitals.</li>
+          </ul>
+
+          <!-- Section 3 -->
+          <h4 class="mt-4 mb-2">Key Investment Benefits</h4>
+          <ul>
+            <li>Wide range of commercial options.</li>
+            <li>Assured returns (up to 12%).</li>
+            <li>European-themed architecture.</li>
+            <li>High footfall and strong rental potential.</li>
+          </ul>
+        </div>
+
+        <!-- Right Side: Image -->
+        <div class="col-md-6 text-center">
+          <img src="omaxd.jpg" alt="Real Estate" class="img-fluid rounded shadow" />
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+<footer class="pt-60 pt-sm-30">
+        <div class="main-fooger">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="f-title fz26 text-white fw5 mb-30">VIP Realty</div>
+                        <div class="d-flex">
+                            <ul class="menu list-unstyled mr-30">
+                                <li><a href="home.html" style=" text-decoration: none; color: white;">Home</a></li>
+                                <li><a href="about.html" style=" text-decoration: none; color: white;">About</a></li>
+                                <li><a href="projectdetails.html"
+                                        style=" text-decoration: none; color: white;">Trending</a>
+                                </li>
+                                <li><a href="properties.html" style=" text-decoration: none; color: white;">Property
+                                        Details</a></li>
+                                <li><a href="services.html" style=" text-decoration: none; color: white;">Services</a>
+                                </li>
+                                <li><a href="contact.html" style=" text-decoration: none; color: white;">Contact</a>
+                                </li>
+                                <li><a href="review.html" style=" text-decoration: none; color: white;">Reviews</a></li>
+                                <!-- <li><a href=".." style=" text-decoration: none; color: white;">Contact Us</a></li> -->
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4 ps-md-5">
+                        <div class="f-title fz26 text-white fw5 mb-30 mt-md-0 mt-3 mb-sm-10">Contact</div>
+                        <ul class="menu list-unstyled mb-20">
+                            <li>Call: <a href="callto:+91-9015222222" style=" text-decoration: none; color: white;">
+                                    +91-9015222222,
+                                    9910986424</a></li>
+                            <li>Email: <a href="mailto:info@omaxews.com" style=" text-decoration: none; color: white;">
+                                    info@omaxews.com</a></li>
+                        </ul>
+                        <ul class="d-flex flex-row list-unstyled mb-0 ">
+                            <li><a href=""><img src="insta.jpg" alt="" style="height: 24px; width: 24px;"></a></li>
+                            <li><a href=""><img src="linkedin.jpg" alt="" style="height: 24px; width: 24px;"></a></li>
+                        </ul>
+
+
+                    </div>
+                    <div class="col-md-3">
+                        <div class="address">
+                            <div class="f-title fz26 text-white fw5 mb-30 mt-md-0 mt-3 mb-sm-10">Addresss</div>
+                            <p>VIP REALTY SCO No.9, D-Block Parkstreet, Sector 84, Faridabad, Haryana 121002</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom mt-30">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-11 mb-20">
+                        <div class="fh1 fz16 third-color mb-16">Disclaimer</div>
+                        <p class="mb-0 third-color fz12">We are committed to providing valuable and helpful information
+                            to assist
+                            you in your real estate journey. The content, listings, and tools available on this platform
+                            are
+                            designed
+                            to support your property search by offering insights, trends, and resources in one
+                            convenient
+                            place.While
+                            we aim to keep all details accurate and up to date, we encourage users to verify important
+                            information
+                            such as property ownership, legal status, pricing, and approvals (like RERA registration or
+                            municipal
+                            permits) through appropriate channels before making any final decisions.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright py-30 py-sm-20">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="fz12 text-center d-table mx-auto se-color mb-0">© Copyright 2025 | All Rights Reserved
+                            by VIP
+                            REALTY</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+<style>
+  footer {
+    background-color: #141414;
+    font-style: none;
+    text-decoration: none;
+    color: white;
+    margin: 20px;
+    width: 100%;
+    margin-left: -10px;
+  }
+  footer .main-fooger li:hover{
+    text-decoration: underline;
+    color: blue;
+  }
+</style>
+
+</html>

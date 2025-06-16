@@ -1,0 +1,42 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+.review-section {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+.review-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.reviews-container > div {
+  border-bottom: 1px solid #ddd;
+  padding: 16px 0;
+}
+
+.reviews-container h4 {
+  margin: 0 0 5px;
+  font-size: 18px;
+  color: #333;
+}
+
+.reviews-container p {
+  margin: 0 0 5px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.reviews-container small {
+  color: #888;
+}
