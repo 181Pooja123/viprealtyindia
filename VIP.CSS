@@ -583,9 +583,9 @@ footer {
   text-decoration: none;
   color: white;
   width: 100%;
-  margin-left: 0px;
+  
 }
-footer .main-fooger li:hover{
+footer .main-footer li:hover{
     text-decoration: underline;
     color: blue;
   }
