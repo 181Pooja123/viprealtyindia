@@ -422,6 +422,11 @@ body {
   background-color: #151212;
   height: 50%;
 }
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .form {
+    width: 100%;
+  }
+}
 
 .map-responsive {
   overflow: hidden;
