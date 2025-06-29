@@ -584,7 +584,7 @@ footer {
   color: white;
   margin: 20px;
   width: 100%;
-  margin-left: -10px;
+  margin-left: 0px;
 }
 footer .main-fooger li:hover{
     text-decoration: underline;
